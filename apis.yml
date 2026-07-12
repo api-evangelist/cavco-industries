@@ -26,6 +26,8 @@ apis:
     description: >-
       The Cavco Industries API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: DomainSecurity
+    url: security/cavco-industries-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/cavco-industries-inc-
   - type: Website
