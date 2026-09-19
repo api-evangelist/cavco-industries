@@ -1,0 +1,379 @@
+generated: '2026-09-19'
+method: probed
+source: 'Live GET of each /.well-known/ path (plus /llms.txt, /openapi.json, /swagger.json, /api-docs as contract-discovery
+  roots) on every host Cavco Industries'' record knows or that discovery surfaced: the registrable domain and www,
+  the brand site cavcohomes.com and www, the investor, careers and CavConnect retailer-portal hosts, and the two
+  scaffolded hosts developer.cavco.com / api.cavco.com. No MCP host, OpenAPI servers[] host or authorization_servers
+  host exists for this company.'
+note: NO DOCUMENT WAS SERVED ON ANY HOST. Every 200 in this record is an SPA shell reached through a redirect to
+  the homepage (cavco.com, www.cavco.com) or an Angular catch-all route (cavconnect.cavco.com), and every 202 is
+  a captcha interstitial; every other path 404d or the host does not resolve. No WellKnown, SecurityTxt or AgentCard
+  pointer is wired into apis.yml because nothing was published — this file records an absence, not a presence. Contract-discovery
+  roots (/llms.txt, /openapi.json, /swagger.json, /api-docs) missed on every host the same way and are not listed
+  per host below.
+hosts:
+- host: cavco.com
+  note: Registrable domain. Every path 301s to https://www.cavco.com/ and on to https://www.cavcohomes.com/ (the
+    SPA root), so the final 200 is the homepage shell, not a document at the requested path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+- host: www.cavco.com
+  note: Declared Website. 301s every path to https://www.cavcohomes.com/ (the SPA root); the final 200 is the homepage
+    shell, not a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://www.cavcohomes.com/), not a document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+- host: cavcohomes.com
+  note: Apex of the brand site; 301s to www.cavcohomes.com, which answers 404 with the SPA shell for every path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.cavcohomes.com
+  note: Consumer brand site (Bloomreach brXM React SPA). Answers 404 with the SPA shell for every path probed.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: investor.cavco.com
+  note: Investor relations site (Q4/ASP). Answers 404 with an HTML error page for every path probed.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: cavconnect.cavco.com
+  note: CavConnect retailer portal (Angular SPA, login-gated). Its catch-all router answers 200 with the portal
+    shell for some paths and 404 for others; no 200 carried a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://cavconnect.cavco.com/.well-known/openid-configuration), not a document
+      — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://cavconnect.cavco.com/.well-known/oauth-authorization-server), not a
+      document — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://cavconnect.cavco.com/.well-known/oauth-protected-resource), not a document
+      — treated as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML shell (redirected to https://cavconnect.cavco.com/.well-known/api-catalog), not a document — treated
+      as a miss
+    real_document: false
+    content_type: text/html
+    result: spa-shell
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: careers.cavco.com
+  note: Careers site behind a JS captcha interstitial (202 + meta-refresh to /.well-known/sgcaptcha/) on every path;
+    nothing readable was served.
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/oauth-protected-resource
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+    note: captcha interstitial, not a document
+    real_document: false
+    content_type: text/html
+    result: captcha-interstitial
+- host: developer.cavco.com
+  note: Host named as humanURL by the earlier scaffolded API entry. NXDOMAIN — does not exist in DNS; status 0 means
+    no connection, not a 404.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 0
+    file: null
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 0
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null
+- host: api.cavco.com
+  note: Host named as baseURL by the earlier scaffolded API entry. NXDOMAIN — does not exist in DNS; status 0 means
+    no connection, not a 404.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 0
+    file: null
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 0
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null

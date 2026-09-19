@@ -1,0 +1,59 @@
+# Cavco Industries
+
+> Cavco Industries, Inc. (Nasdaq: CVCO), founded in Phoenix, Arizona in 1965, designs and builds
+> factory-built housing — manufactured homes, modular homes, park model RVs and vacation cabins — at
+> more than twenty plants across the United States, sold through independent and company-owned
+> retailers under the Cavco family of brands (including Fleetwood Homes and Palm Harbor Homes), with
+> financing through CountryPlace Mortgage and homeowner insurance through Standard Casualty.
+
+## Machine-readable API surface
+
+**Cavco Industries publishes no API.** As of 2026-09-19 the company operates no developer program,
+no developer portal, no SDK, no GitHub organization, and no machine-readable contract of any kind.
+This was established by probe, not by assumption:
+
+- The hosts `developer.cavco.com` and `api.cavco.com`, which an earlier profile of this company had
+  recorded as its documentation and API base, do not exist in DNS (NXDOMAIN) and have been removed
+  from the record.
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP server, A2A agent card or `llms.txt` was found on
+  `cavco.com`, `www.cavco.com`, `cavcohomes.com`, `www.cavcohomes.com`, `investor.cavco.com`,
+  `careers.cavco.com` or `cavconnect.cavco.com`. Every `/.well-known/` discovery path on every host
+  404d, or answered with an SPA shell or captcha interstitial (see
+  `well-known/cavco-industries-well-known.yml` for the full probe record).
+- No package named for the company exists on npm, PyPI, RubyGems or NuGet.
+- The consumer brand site is a Bloomreach (brXM) React single-page app. Its `/resourceapi/*` endpoint
+  serves the stock Bloomreach Pages Delivery API JSON that the SPA renders from. That is CMS vendor
+  infrastructure, not a product API Cavco designed, documented or supports, and is deliberately NOT
+  catalogued as a Cavco API.
+- The one integration property Cavco runs is **CavConnect** (`https://cavconnect.cavco.com/`), an
+  Angular retailer portal for its dealer network. It is login-gated, publishes no documentation, and
+  its backend host (`cavconnectdata.cavco.com`, named in the portal's public bundle) does not resolve
+  from the public internet. It is a dealer application, not a developer surface.
+
+If you are an agent looking for a callable Cavco Industries API, there is not one to call. Retailer,
+lender and supplier relationships are contracted privately.
+
+## Company pages
+
+- [Home](https://www.cavcohomes.com/): consumer brand site (the declared website https://www.cavco.com redirects here).
+- [About Cavco Industries](https://www.cavcohomes.com/about): history, brands, construction, investor relations.
+- [Partner With Cavco](https://www.cavcohomes.com/contact/partner-with-us): retailer, community-developer and builder enquiries.
+- [Contact](https://www.cavcohomes.com/contact): information requests, service and maintenance, corporate office.
+- [Mortgage Lending (CountryPlace Mortgage)](https://www.cavcohomes.com/mortgage-lending)
+- [Insurance (Standard Casualty)](https://www.cavcohomes.com/insurance)
+- [Corporate Responsibility](https://www.cavcohomes.com/corporate-responsibility)
+- [Investor Relations](https://investor.cavco.com/): press releases, SEC filings, annual reports.
+- [Press Releases](https://investor.cavco.com/press/)
+- [Management & Governance](https://investor.cavco.com/management/)
+- [Privacy Policy](https://www.cavcohomes.com/privacy-policy): last updated July 7, 2026; requests to privacy@cavco.com.
+- [California Privacy Notice](https://www.cavcohomes.com/ca-privacy): CCPA rights, 45-day response commitment.
+- [Retailer Portal (CavConnect)](https://cavconnect.cavco.com/): login required.
+
+## This profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/cavco-industries/refs/heads/main/apis.yml): the APIs.json record for this company (apis: [] — no API entries).
+- [Well-known probe record](https://github.com/api-evangelist/cavco-industries/blob/main/well-known/cavco-industries-well-known.yml)
+- [Domain security probe](https://github.com/api-evangelist/cavco-industries/blob/main/security/cavco-industries-domain-security.yml)
+- [Regulatory posture](https://github.com/api-evangelist/cavco-industries/blob/main/regulatory/cavco-industries-regulatory-posture.yml)
+
+This profile is maintained by API Evangelist and is not affiliated with Cavco Industries, Inc.

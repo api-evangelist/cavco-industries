@@ -23,39 +23,97 @@ accessModel:
   confidence: medium
   source:
   - plans
-  - {url: 'https://www.cavco.com', status: 301, note: 'declared website redirects to https://www.cavcohomes.com/ — a different registrable domain (cavco.com -> cavcohomes.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
+  - url: https://www.cavco.com
+    status: 301
+    note: >-
+      declared website redirects to https://www.cavcohomes.com/ — a different registrable domain (cavco.com -> cavcohomes.com),
+      possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cavco-industries.png
 tags:
-  - Manufactured Homes
-  - Housing
+- Manufactured Homes
+- Housing
+- Modular Homes
+- Park Model RVs
+- Home Building
+- Manufacturing
+- Mortgage Lending
+- Insurance
+- Real Estate
 description: >-
-  Cavco Industries is a major US corporation and Fortune 1000 company. The Cavco Industries API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+  Cavco Industries, Inc. (Nasdaq: CVCO), founded in Phoenix, Arizona in 1965, designs and builds factory-built housing
+  — manufactured homes, modular homes, park model RVs and vacation cabins — at more than twenty plants across the
+  United States, sold through independent and company-owned retailers under the Cavco family of brands (including
+  Fleetwood Homes and Palm Harbor Homes), with financing through its CountryPlace Mortgage subsidiary and homeowner
+  insurance through Standard Casualty. It is a Fortune 1000 home builder, not a software vendor: it publishes no
+  developer program, API reference, OpenAPI, SDK or webhook surface. Its only integration property is a login-gated
+  Angular retailer portal (CavConnect, cavconnect.cavco.com) whose backend host is not publicly resolvable. The
+  developer.cavco.com and api.cavco.com hosts an earlier profile scaffolded do not exist in DNS and were removed
+  from this record.
 created: '2026-04-19'
-modified: '2026-04-19'
+modified: '2026-09-19'
 specificationVersion: '0.23'
-apis:
-  - aid: cavco-industries:cavco-industries-api
-    name: Cavco Industries API
-    tags:
-      - Manufactured Homes
-      - Housing
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://api.cavco.com
-    humanURL: https://developer.cavco.com
-    properties:
-      - url: https://developer.cavco.com/docs
-        type: Documentation
-    description: >-
-      The Cavco Industries API provides access to platform services and data for enterprise integration and automation.
+apis: []
 common:
-  - type: DomainSecurity
-    url: security/cavco-industries-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/cavco-industries-inc-
-  - type: Website
-    url: https://www.cavco.com
+- type: DomainSecurity
+  url: security/cavco-industries-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cavco-industries-inc-
+- type: Website
+  url: https://www.cavco.com
+- type: PrivacyPolicy
+  url: https://www.cavcohomes.com/privacy-policy
+- type: Support
+  url: https://www.cavcohomes.com/contact
+- type: Newsroom
+  url: https://investor.cavco.com/press/
+- type: Leadership
+  url: https://investor.cavco.com/management/
+- type: LLMsTxt
+  url: llms/cavco-industries-llms.txt
+- type: DataSubjectRequest
+  url: regulatory/cavco-industries-regulatory-posture.yml
+- type: RegulatoryPosture
+  url: regulatory/cavco-industries-regulatory-posture.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Cavco Industries builds and sells factory-built homes, and software is not a product it sells: the developer.cavco.com
+    and api.cavco.com hosts a prior profile recorded are NXDOMAIN, no api./docs./dev. host, OpenAPI, GraphQL, MCP,
+    agent card, llms.txt, well-known document, GitHub organization or package exists on any of its seven live hosts,
+    and its only integration property is the login-gated CavConnect Angular retailer portal whose backend host cavconnectdata.cavco.com
+    (named in the portal's public bundle) does not resolve from the public internet — the one open JSON surface,
+    www.cavcohomes.com/resourceapi/*, is the stock Bloomreach CMS page-delivery API the site's SPA renders from,
+    not a Cavco-designed API.
+  evidence:
+  - url: https://developer.cavco.com/docs
+    status: 0
+  - url: https://api.cavco.com/openapi.json
+    status: 0
+  - url: https://www.cavco.com
+    status: 301
+  - url: https://www.cavcohomes.com/openapi.json
+    status: 404
+  - url: https://www.cavcohomes.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.cavcohomes.com/llms.txt
+    status: 404
+  - url: https://cavconnect.cavco.com/
+    status: 200
+  - url: https://cavconnectdata.cavco.com/rest/api
+    status: 0
+  - url: https://www.cavcohomes.com/resourceapi/
+    status: 200
+  - url: https://api.github.com/users/cavcoindustries
+    status: 200
+  checked: '2026-09-19'
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3

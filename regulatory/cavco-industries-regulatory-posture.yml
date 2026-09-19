@@ -1,0 +1,34 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://www.cavcohomes.com/ca-privacy
+note: >-
+  Harvest only. Cavco Industries is a factory-built-housing manufacturer with no docs site, trust
+  center, security page or legal sub-site; its public surface is the Bloomreach-hosted consumer brand
+  site www.cavcohomes.com (which the declared website www.cavco.com 301s to), the Q4 investor site
+  investor.cavco.com, a captcha-fronted careers site and the login-gated CavConnect retailer portal.
+  Conventional paths probed live on 2026-09-19 on www.cavcohomes.com all returned 404: /accessibility,
+  /accessibility/vpat, /legal/subprocessors, /legal/dpa, /privacy/requests, /transparency, /trust,
+  /security, /security/sbom, /ai, /ai/transparency, /legal/report-content, /terms, /terms-of-use.
+  /esg 301s to /corporate-responsibility (a sustainability marketing page; the investor site links a
+  2026 SASB report PDF) — neither is a signal this artifact records. The privacy policy (last updated
+  July 7, 2026) makes no Global Privacy Control statement, so global_privacy_control is NOT recorded;
+  its "Do Not Sell My Personal Information" link 301s to a OneTrust webform. No data-residency,
+  subprocessor, SBOM, support-lifetime, accessibility-conformance, AI-transparency or incident-
+  notification statement is published anywhere reachable anonymously. The only page named
+  "terms and conditions" on the site is the supplier purchase-order terms
+  (/buyers-standard-terms-and-conditions), not a website terms of use, so no TermsOfService pointer
+  is wired.
+signals:
+  data_subject_request:
+    url: https://www.cavcohomes.com/ca-privacy
+    channel: mailto:privacy@cavco.com
+    note: >-
+      The California privacy notice enumerates CCPA rights — right to know / access, data portability
+      (a "readily useable" format), deletion, and opt-out of sale (honored for twelve months before
+      re-asking) — and states Cavco "endeavor[s] to respond to a verifiable consumer request within
+      forty-five (45) days of its receipt", with a possible further 45-day extension; up to two
+      access/portability requests per 12-month period. Requests go to Privacy@Cavco.com or the
+      "Do Not Sell My Personal Information" OneTrust webform (privacyportal.onetrust.com). The general
+      privacy policy (https://www.cavcohomes.com/privacy-policy) separately offers access, update and
+      deletion by email to privacy@cavco.com. No web API endpoint is published.
